@@ -1,0 +1,139 @@
+/*those fonts*/
+@font-face {
+    font-family: 'facebook';
+    src: url(/fonts/fb-fonts.OTF);
+}
+*{
+    font-family: 'facebook';
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    background-color: rgb(233, 228, 228);
+    font-size: 12px;
+    margin: 20vh 0;
+}
+
+/*subdivising the parts*/
+main{
+    display: flex;
+    justify-content: center;
+    gap: 15%;
+}
+/*first part*/
+.about p{
+    font-size: 2em;
+}
+.about{
+    width: 30%;
+    margin: auto 0;
+}
+.logo{
+    margin-left: -6%;
+}
+.logo img{
+    width: 60%;
+}
+.text{
+    margin-top: -40px;    
+}
+/*second part*/
+.formulaire{
+    margin: 0 5%;
+    background-color: white;
+    padding: 20PX;
+    text-align: center;
+    border-radius: 10px;
+    filter: drop-shadow(0 0 10px rgba(128, 128, 128, 0.434));
+}
+input{
+    margin: 5px 0;
+    width: 90%;
+    padding: 10px;
+    border-radius: 7px;
+    border: 1px solid grey;
+    color: rgb(68, 67, 67);
+}
+input:focus{
+    outline: 1px solid black;
+    filter: drop-shadow(0 0 2px #1877F2);
+}
+/*forgot password*/
+.forgot a{
+    color: #1877F2;
+}
+a:hover{
+    text-decoration: underline;
+}
+.line{
+    height: 1px;
+    width: 100%;
+    background-color: grey;
+    margin: 15px 0;
+}
+/*the buttons*/
+button{
+    cursor: pointer;
+}
+.btn{
+    width: 97%;
+    background-color: #1877F2;
+    border: none;
+    padding: 10px 0;
+    color: white;
+    font-size: 1.3em;
+    letter-spacing: 2px;
+    border-radius: 7px;
+    margin: 10px 0;
+}
+.btn2{
+    width: 60%;
+    border: none;
+    background-color: #10B72A;
+    padding: 10px 0;
+    color: white;
+    font-size: 1.2em;
+    border-radius: 7px;
+    margin: 10px 0;
+}
+/*page stuff*/
+.page{
+    text-align: center;
+    width: 80%;
+    font-size: 1.2em;
+    margin: 0 auto;
+}
+.page a{
+    color: black;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+/*responsive*/
+@media screen and (max-width: 900px) {
+    .logo{
+        margin: 25px 0;
+    }
+    .logo img{
+        width: 90%;
+    }
+    .about{
+        margin: 0 auto;
+        text-align: center;
+        width: 50%;
+    }
+    main{
+        display: block;
+    }
+    .formulaire{
+        width: 40%;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 700px) {
+    .formulaire{
+        width: 60%;
+        margin: 0 auto;
+    }
+}
