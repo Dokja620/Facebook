@@ -1,7 +1,7 @@
 /*those fonts*/
 @font-face {
     font-family: 'facebook';
-    src: url(/fonts/fb-fonts.OTF);
+    src: url(../fonts/fb-fonts.OTF);
 }
 *{
     font-family: 'facebook';
